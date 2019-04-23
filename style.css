@@ -1,0 +1,82 @@
+:root{
+
+	--margin-left-right: 15%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#pai{
+	display: grid;
+	grid-template-areas: "header header header" "nav nav nav" "div aside section" "div article section" "div main section" "as art art" "sect sect sect" "footer footer footer";
+	grid-template-rows: 15vh 8vh 10vh 32vh 20vh 25vh 25vh 20vh;
+	color: #00d0f9;
+	text-align: center;
+}
+
+header{
+	grid-area: header;
+	background: red;
+}
+
+nav{
+	grid-area: nav;
+	background: yellow;
+	position: sticky;
+	top: 0;
+}
+
+div{
+	grid-area: div;
+	background: green;
+	margin-left: var(--margin-left-right);
+}
+
+aside{
+	grid-area: aside;
+	background: blue;
+}
+
+article{
+	grid-area: article;
+	background: grey;
+}
+
+main{
+	grid-area: main;
+	background: pink;
+}
+
+.sec{
+	grid-area: section;
+	background: purple;
+	margin-right: var(--margin-left-right);
+}
+
+.art{
+	grid-area: art;
+	background: black;
+	margin-right: 7.5%;
+}
+
+.as{
+	grid-area: as;
+	background: deeppink;
+	margin-left: var(--margin-left-right);
+}
+
+.sect{
+	grid-area: sect;
+	background: #6495ED;
+	margin-top: 1%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+footer{
+	grid-area: footer;
+	background: orange;
+	margin-top: 2%;
+}
